@@ -28,10 +28,8 @@ produces.
    settings. You also can edit `.webhaste/site.config.json` manually —
    set `siteName`, `domain`, and confirm `cssFramework` (this starter
    ships configured for `bootstrap5`).
-3. Sign up for [SB Forms](https://startbootstrap.com/solution/contact-forms)
-   and set your API token in the contact form's `data-sb-form-api-token`
-   attribute in `index.html` — or swap the form for your own backend (see
-   "Contact form" below).
+3. Set your recipient address and subject line in `scripts/scripts.js` (see
+   "Contact form" below) — or swap the form for your own backend.
 4. In the WebHaste extension, begin editing `index.html` to your own
    content — headline, feature copy, pricing tiers, testimonials.
 5. Once you have several pages built, click "Edit Menus" to set up your own
@@ -44,11 +42,15 @@ produces.
 
 ## Contact form
 
-The contact form is pre-wired for [SB Forms](https://startbootstrap.com/solution/contact-forms),
-a hosted form backend from the original template's author. Without an API
-token the submit button stays disabled. Either sign up for a token, or
-replace the `<form>` in `index.html` with your own backend/action —
-it's ordinary page content, not something WebHaste generates.
+The contact form doesn't call out to any hosted service — submitting it
+opens the visitor's own email client via a `mailto:` link, built in
+`scripts/scripts.js`. Edit the `recipient` and `subject` constants there to
+point at your own address. This is a client-side convenience, not a real
+form backend: it depends on the visitor having a configured mail client, and
+the fields aren't validated server-side. Swap it out for a hosted form
+service or your own backend/action if you need something more robust — the
+`<form>` in `index.html` is ordinary page content, not something WebHaste
+generates.
 
 ## Previewing locally
 

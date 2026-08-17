@@ -34,7 +34,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
 
-Bootstrap, Bootstrap Icons, and the SB Forms activation script referenced via
-CDN `<link>`/`<script>` tags in `.webhaste/templates/business-frontpage.html`
-and `index.html` remain their respective authors' property and are not
-vendored into this repo.
+Bootstrap and Bootstrap Icons, referenced via CDN `<link>`/`<script>` tags
+in `.webhaste/templates/business-frontpage.html`, remain their respective
+authors' property and are not vendored into this repo.
