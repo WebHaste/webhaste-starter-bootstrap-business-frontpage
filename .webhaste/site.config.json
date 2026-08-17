@@ -1,0 +1,11 @@
+{
+  "siteName": "My Site",
+  "domain": "",
+  "paragraphMode": "p",
+  "activeTemplate": "business-frontpage.html",
+  "cssFramework": "bootstrap5",
+  "language": "en",
+  "deploymentTarget": "local",
+  "deployDirectory": "dist",
+  "projectId": "f3a8c6e2-7b91-4d5a-9e3f-2c1a6d8b4e70"
+}

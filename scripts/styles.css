@@ -1,0 +1,17 @@
+/*!
+ * Custom CSS adapted from Start Bootstrap - Business Frontpage v5.0.9
+ * (https://startbootstrap.com/template/business-frontpage)
+ * Copyright 2013-2023 Start Bootstrap, Licensed under MIT
+ * (https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE)
+ *
+ * This is only the template's custom layer — Bootstrap itself is loaded
+ * separately (see the CSS framework <link> in .webhaste/templates/business-frontpage.html).
+ */
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  font-size: 2rem;
+}

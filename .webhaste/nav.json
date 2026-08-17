@@ -1,0 +1,10 @@
+{
+  "menus": {
+    "header": [
+      { "label": "Home", "href": "/index.html" },
+      { "label": "Features", "href": "/index.html#features" },
+      { "label": "Pricing", "href": "/index.html#pricing" },
+      { "label": "Contact", "href": "/index.html#contact" }
+    ]
+  }
+}
