@@ -21,8 +21,15 @@
     <!-- template-specific css -->
     <link href="/scripts/styles.css" rel="stylesheet" type="text/css" />
 
-    <!-- template-specific js -->
-    <script src="/scripts/scripts.js"></script>
+    <!-- template-specific js — deferred so #contactForm exists in the DOM by
+         the time scripts.js runs; without it this <script> (in <head>, no
+         defer) executes before <body> is parsed and getElementById('contactForm')
+         returns null -->
+    <script src="/scripts/scripts.js" defer></script>
+
+    <!-- site search — see README's "Site search" section -->
+    <script src="/scripts/lunr.min.js"></script>
+    <script src="/scripts/search.js"></script>
 
 </head>
 
@@ -36,6 +43,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 {{NAV:header}}
+                <div class="position-relative ms-lg-auto" style="min-width:240px;">
+                    <input class="form-control" type="search" id="cs-search-input" placeholder="Search..." autocomplete="off">
+                    <div id="cs-search-results" class="position-absolute end-0 bg-white border rounded shadow-sm mt-1" style="z-index:1050;"></div>
+                </div>
             </div>
         </div>
     </nav>
