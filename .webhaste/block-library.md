@@ -148,6 +148,48 @@ Insert via the editor's 🧩 Blocks dialog, or copy the markup directly into a p
       
 ```
 
+### Lottie Animation
+```html
+
+      <div class="lottie-content my-4 cs-lottie-placeholder" data-lottie-src="">
+  <span class="cs-lottie-placeholder__icon">🎞️</span>
+  <span class="cs-lottie-placeholder__label">🎞️ Click this block's 🎞️ toolbar button to choose an animation (.json)</span>
+</div>
+
+```
+
+### List: Links
+```html
+
+      <div class="cs-list-placeholder" data-list-src="" data-list-view="links">
+  <span class="cs-list-placeholder__icon">🗂️</span>
+  <span class="cs-list-placeholder__label">🗂️ Click this block's 🗂️ toolbar button to choose a list</span>
+</div>
+
+```
+
+### List: Directory
+```html
+
+      <div class="cs-list-placeholder" data-list-src="" data-list-view="directory">
+  <span class="cs-list-placeholder__icon">🗂️</span>
+  <span class="cs-list-placeholder__label">🗂️ Click this block's 🗂️ toolbar button to choose a list</span>
+</div>
+
+```
+
+### List: Table
+```html
+
+      <table class="table" data-list-src="" data-list-view="table">
+  <thead></thead>
+  <tbody>
+    <tr><td class="cs-list-placeholder-cell"><span class="cs-list-placeholder__icon">🗂️</span> <span class="cs-list-placeholder__label">🗂️ Click this block's 🗂️ toolbar button to choose a list</span></td></tr>
+  </tbody>
+</table>
+
+```
+
 ## Custom (`.webhaste/blocks/`)
 
-None yet — add `.html` files to `.webhaste/blocks/` to make them available here.
+None yet. Add one by dropping an `.html` file into `.webhaste/blocks/` — see `CLAUDE.md`.
